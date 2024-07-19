@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Muns - Agustina Sacchi CEI</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header" id="inicio">
+        <img class="header__nav__img" src="asset/logo.jpg" alt="Logotipo de Las Muns">
+        <button id="abrirMenu" class="abrirMenu" title="btn para abrir menu responsive"><img src="asset/menu.svg" alt="Icono de menú"></button>
+        <nav id="nav" class="header__nav" >
+         <button class="cerrarMenu" id="cerrarMenu" title="btn para cerrar el menu responsive"><img src="asset/close.svg" alt="Icono de cerrar menú"></button>
+        <ul class="header__nav__ul">
+            <li class="header__nav__ul__li"><a href="index.html" title="enlace a la pagina de inicio">Inicio</a></li>
+            <li class="header__nav__ul__li"><a href="#ubicacion" title="enlace a la seccion donde se encuentra la ubicacion">Dónde Estamos</a></li>
+            <li class="header__nav__ul__li"><a href="franquicia.html" title="enlace a la pagina Franquicia">Abre tu Franquicia</a></li>
+            <li class="header__nav__ul__li"><a href="enTuEmpresa.html" title="enlace a la pagina Muns en tu Empresa">Muns en tu Empresa</a></li>
+            <li><a href="https://pedidos.lasmuns.com/?_gl=1*1svj91g*_gcl_au*Njg5NTI4NTc3LjE3MTk5MjIxMTY.*_ga*NTA5MDA0ODM0LjE3MjA4MjQ2MzU.*_ga_J2M2XYCBM8*MTcyMTM4MjI2OC4xNC4wLjE3MjEzODIyNjguNjAuMC41OTAwMjA0NTU." class="header__nav__btn btn" title="boton a la pagina de hacer pedido" target="_blank">Haz tu Pedido</a></li>
+        </ul>
+        </nav>   
+      </header>
+    <!--SECCION CARTA PDF-->
+    <div class="sectionCartaPdf">
+        <div class="sectionCartaPdf__div">
+         <h2>Haz click aquí para poder ver nuestra carta</h2>
+         <a href="#" class="btn" title="enlace al pdf de la carta" target="_blank">Ver Menú en pdf</a>
+        </div>
+        <picture>
+           <source srcset="asset/webp/muns.webp" type="imgage/webp">
+           <img src="asset/webp/muns.webp" alt="imagen de empanadas" loading="lazy">
+        </picture>   
+    </div>
+    <!--SECCION PREGUNTAS FRECUENTES-->
+    <section class="faq" id="preguntas">
+        <h2>Preguntas Frecuentes</h2>
+        <!--PREGUNTA UNO-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Tenéis muns vegetarianas? ¿Y veganas?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>¡Claro que sí! 🙌🏼 10 de los 16 sabores de nuestra carta son vegetarianos/veganos (veganas 🌱: Cheeseburger, Humita y Chocobanana).</p>
+            </div>
+        </div>
+        <!--PREGUNTA DOS-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Puedo congelar mis Muns? ¿Y puedo calentar mis Muns en la freidora de aire?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>¡Sí se puede! 🤩 Debes pedirlas “para hornear en casa”, es decir que no estén cocinadas al 100%. Cuando las quieras consumir, debes descongelarlas en nevera (demora unas 5 horas aproximadamente) para posteriormente hornearlas (programa tu freidora a 200ºC).</p>
+            </div>
+        </div>
+        <!--PREGUNTA TRES-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Puedo pedir Muns para un evento o reunión?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>Ingresa a nuestra web, en la sección Muns en tu Empresa tendrás toda la información necesaria. También puedes escribirnos a pedidos@lasmuns.com</p>
+            </div>
+        </div>
+        <!--PREGUNTA CUATRO-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Cómo hago para tener una franquicia de Las Muns?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>Ingresa a nuestra web, en la sección Abre tu Franquicia tendrás toda la información necesaria. También puedes escribirnos a franquicias@lasmuns.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION DONDE ESTAMOS -->
+    <section id="ubicacion" class="sectionMaps">
+        <h3 class="sectionMaps__title">Buscanos en tu ciudad favorita</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.6786457781313!2d-4.425284663173249!3d36.717388865446644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a4871bd615%3A0x1b8737cf1951478a!2sLas%20Muns!5e0!3m2!1ses!2ses!4v1720824881706!5m2!1ses!2ses"  height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section> 
+    <!--SECCION NEWSLETTERS-->
+    <div class="sectionNewsletters">
+        <div class="sectionNewsletters__container">
+         <span class="sectionNewsletters__container--span">Inscríbete para recibir novedades e información de nuevas aperturas!</span>
+         <form class="sectionNewsletters__container__form" method="POST" action="subscribe"> 
+             <input class="sectionNewsletters__container__form--input" type="email" placeholder="Email" required>
+             <input class="sectionNewsletters__container__form--inputSubmit btn" type="submit" value="Enviar">
+         </form>
+        </div>
+    </div>
+    <!--BOTON PARA SUBIR AL INICIO-->
+     <div class="subir">
+        <a class="subirDiv" href=" #inicio" title="enlace para subir arriba de todo"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
+    </div>
+    <!--FOOTER-->
+    <footer class="footer">
+        <nav class="footer__divRow">
+          <div class="footer__divRow__img">
+            <img src="asset/logo.jpg" alt="logo Las Muns">
+          </div>
+          <div class="footer__divRow__item">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="#" title="enlace a la carta de alergenos">Carta de Alérgenos</a></li>
+                <li><a href="#preguntas" title="enlace a la pagina donde se encuentran preguntas frecuentes">Preguntas frecuentes</a></li>
+                <li><a href="#" title="enlace a la seccion trabaja con nosotros">Trabaja con nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer__divRow__item">
+            <h3>Nuestra carta</h3>
+            <ul>
+              <li><a href="nuestraCarta.html" title="enlace al pdf de la carta">Packs</a></li>
+              <li><a href="nuestraCarta.html" title="enlace al pdf de la carta">Empanadas</a></li>
+              <li><a href="nuestraCarta.html" title="enlace al pdf de la carta">Bebidas y postres</a></li>
+            </ul>
+          </div>
+          <div class="footer__divRow__item">
+            <h3>Secciones</h3>
+            <ul>
+                <li><a href="#ubicacion" title="enlace a la seccion donde estamos">Dónde estamos</a></li>
+                <li><a href="franquicia.html" title="enlace a la pagina Abre tu franquicia">Abre tu franquicia</a></li>
+                <li><a href="enTuEmpresa.html" title="enlace a la pagina Muns en Tu Empresa">Muns en tu empresa</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__divColumn">
+            <ul>
+                <li><a href="https://www.behance.net/agustinasacchi" title="enlace a porfolio de Agustina" target="_blank">©2024 Las Muns - Desarrollado por: Agustina Sacchi</a></li>
+                <li><a href="#" title="enlace a la politica de la web">Polìtica de privacidad</a></li>
+                <li><a href="#" title="enlace a la politica de la web">Polìtica de Cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer__div"> 
+            <a href="https://www.instagram.com/lasmuns/" class="logoRedSocial" target="_blank"><img src="asset/inatgram.png" alt="logo de instagram"></a>
+            <a href="https://www.tiktok.com/@lasmuns" class="logoRedSocial" target="_blank"><img src="asset/tiktok.png" alt=""></a>
+        </div>
+        <img class="footer__img" src="asset/unionEuropea.png" alt="union europea financiado">
+    </footer>
+</body>
+</html>
