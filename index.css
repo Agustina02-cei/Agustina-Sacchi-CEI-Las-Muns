@@ -109,9 +109,6 @@ span {
 /*HEADER*/
 
 .header {
-    background-color: #ffffff;
-    border-radius: 0px 0px 30px 30px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -489,6 +486,10 @@ span {
     gap: var(--main-gap);
 }
 
+.sectionMaps iframe {
+    width: 100%;
+}
+
 
 /*SECCION NEWSLETTERS   {} */
 
@@ -573,13 +574,20 @@ span {
 
     gap: 1em;
 }
-
-
 .footer__divRow__item ul {
     gap: 0.5em;
     display: flex;
     flex-direction: column;
 
+} 
+.footer__div { 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+}
+.logoRedSocial img{
+    max-width: 30px;
 }
 
 /*FOOTER EN COLUMN   {} */
@@ -605,7 +613,7 @@ span {
     margin: auto;
 }
  
-/*PAGINA DOS -  ABRE TU FRANQUICIA*/                                                      /*PAGINA DOS*/
+/*PAGINA -  ABRE TU FRANQUICIA*/                                                  /*PAGINA ABRE TU FRANQUICIA*/
 
 /*SECCION BANNER SECUNDARY*/
 
@@ -618,7 +626,7 @@ span {
 .sectionSobreNosotros__img.secondary img {
     object-fit: cover;
     border-radius: 1em;
-    max-height: 650px;                                                                   /*CHEQUEAR*/
+    max-height: 650px;                                                             
 }
 
 /*SECCION VENTAJAS*/
@@ -733,7 +741,7 @@ span {
 }
 
 input::placeholder {
-    color: rgba(0, 0, 0, 0.726);    
+    color: rgba(0, 0, 0, 0.726);   
 }
 
 .sectionFormulario___form--input {
@@ -744,7 +752,7 @@ input::placeholder {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-/* PAGINA TRES - MUNS EN TU EMPRESA  */                                            /*PAGINA TRES*/
+/* PAGINA - MUNS EN TU EMPRESA  */                                            /*PAGINA MUNS EN TU EMPRESA*/
 
 /*SECCION BANNER THIRD*/
 
@@ -752,6 +760,37 @@ input::placeholder {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)),
     url('/asset/imgBannerEnTuEmpresa.jpg');
 }
+
+/* PAGINA - Nuestra Carta */                                            /*PAGINA Nuestra Carta*/
+
+/*SECCION NUESTRA CARTA PDF*/
+.sectionCartaPdf {
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.sectionCartaPdf__div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+    
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.sectionCartaPdf picture{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.sectionCartaPdf picture img { 
+    border-radius: 1em;
+}
+
 
 
 /* RESPONSIVE  */                                                                 /*RESPONSIVE*/
@@ -832,7 +871,13 @@ input::placeholder {
     .sectionFormulario__container  picture img{
         max-width: 650px;
     } 
-     
+
+    /* PAGINA - Nuestra Carta */                                            /*PAGINA Nuestra Carta*/
+
+    /*SECCION NUESTRA CARTA PDF*/
+    .sectionCartaPdf {
+    max-width: var(--max-width-large);
+    }     
 }
 /* RESPONSIVE PARA ORDENADORES Y TABLETS */
 
@@ -849,16 +894,17 @@ input::placeholder {
         display: block;
     }
     .header {
-        padding: 2em;
+        padding: 2em;      
     }
     .header__nav {
         opacity: 0;
         visibility: hidden;
 
-        position: absolute;
+        position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         bottom: 0;
+        z-index: 1;
         background-color: #ffffff;
         padding: 2em;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.318);
@@ -874,7 +920,7 @@ input::placeholder {
     }
     .header__nav__ul {
         flex-direction: column;
-        align-items: end;
+        align-items: start;
     }
 
     /*SECCION BANNER PRINCIPAL*/
@@ -964,6 +1010,9 @@ input::placeholder {
     .footer__divRow__img {
         max-width: 300px;
     }
+    .footer__div { 
+        justify-content: center;
+    }
 
      /*SECCION VENTAJAS                                            Pagina Abre tu franquicia*/
      .sectionVentajas {
@@ -979,6 +1028,13 @@ input::placeholder {
     }
     /*FORMULARIO */
     .sectionFormulario {
+        max-width: var(--max-width-medium);
+    }
+
+    /* PAGINA - Nuestra Carta */                                            /*PAGINA Nuestra Carta*/
+
+    /*SECCION NUESTRA CARTA PDF*/
+    .sectionCartaPdf {
         max-width: var(--max-width-medium);
     }
 }
@@ -1076,7 +1132,6 @@ input::placeholder {
         max-width: var(--max-width-small);
         margin: auto;
     } 
-
     /*SECCION VENTAJAS                                            Pagina Abre tu franquicia*/
      .sectionVentajas {
         max-width: var(--max-width-small);
@@ -1101,6 +1156,14 @@ input::placeholder {
     /*FORMULARIO */
     .sectionFormulario {
         max-width: var(--max-width-small);
+    }
+    /* PAGINA - Nuestra Carta */                                            /*PAGINA Nuestra Carta*/
+
+    /*SECCION NUESTRA CARTA PDF*/
+    .sectionCartaPdf {
+        max-width: var(--max-width-small);
+        flex-direction: column;
+        padding: var(--main-padding);
     }
 }
 
@@ -1182,5 +1245,12 @@ input::placeholder {
         max-width: var(--max-width-extra-small);
         margin: var(--main-margin);
        padding: var(--main-padding);
+    }
+
+    /* PAGINA - Nuestra Carta */                                            /*PAGINA Nuestra Carta*/
+
+    /*SECCION NUESTRA CARTA PDF*/
+    .sectionCartaPdf {
+        max-width: var(--max-width-extra-small);
     }
 }
