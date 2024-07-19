@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Muns - Agustina Sacchi CEI</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header" id="inicio">
+        <img class="header__nav__img" src="asset/Logo.jpg" alt="Logotipo de Las Muns">
+        <button id="abrirMenu" class="abrirMenu" title="btn para abrir menu responsive"><img src="asset/menu.svg" alt="Icono de menú"></button>
+        <nav id="nav" class="header__nav" >
+         <button class="cerrarMenu" id="cerrarMenu" title="btn para cerrar el menu responsive"><img src="asset/close.svg" alt="Icono de cerrar menú"></button>
+        <ul class="header__nav__ul">
+            <li class="header__nav__ul__li"><a href="index.html" title="enlace a la pagina de inicio">Inicio</a></li>
+            <li class="header__nav__ul__li"><a href="#ubicacion" title="enlace a la seccion donde se encuentra la ubicacion">Dónde Estamos</a></li>
+            <li class="header__nav__ul__li"><a href="franquicia.html" title="enlace a la pagina Franquicia">Abre tu Franquicia</a></li>
+            <li class="header__nav__ul__li"><a href="enTuEmpresa.html" title="enlace a la pagina Muns en tu Empresa">Muns en tu Empresa</a></li>
+            <li><button class="header__nav__btn btn" title="boton a la pagina de hacer pedido">Haz tu Pedido</button></li>
+        </ul>
+        </nav>   
+      </header>
+    <!--SECCION BANNER PRINCIPAL-->
+    <main class="sectionBanner">
+        <div class="sectionBanner__div">
+            <div class="sectionBanner__div__text">
+                <h1>Las mejores Empanadas de Autor</h1>
+                <span>En España, Andorra, Italia y Portugal. </span>
+                <span>¿Qué esperas para probarlas?</span>
+                <button class="sectionBanner__div__btn btn">Pedir ya</button> 
+            </div>
+        </div>
+    </main>
+    <!--SECCION SOBRE NOSOTROS-->
+    <section class="sectionSobreNosotros">
+        <div class="sectionSobreNosotros__content">
+            <div class="sectionSobreNosotros__content__text"> 
+               <h2 class="noMovil">Elaboradas a mano una por una</h2>
+               <p>¿Sabías que todas nuestras empanadas están cerradas a mano? Invertimos mucho tiempo y amor en preparar cada una de ellas. No agregamos conservantes ni aditivos. Usamos colorantes 100% naturales y aceite de oliva. Además, gracias a la calidad de nuestros ingredientes, las muns no solo están buenísimas, sino que también son saludables.</p>
+               <button class="sectionSobreNosotros__content__btn btn" title="btn para ir a la pagina externa de la carta">Ver carta</button> 
+            </div>
+        </div>
+        <div class="sectionSobreNosotros__img">
+            <picture>
+                <source srcset="asset/webp/imgSobreNosotros.webp" type="imgage/webp">
+                <img src="asset/webp/imgSobreNosotros.webp" alt="empanadas de distintos colores apiladas" loading="lazy">
+            </picture>   
+        </div>
+        <h2 class="siMovil">Elaboradas a mano una por una</h2>
+    </section>
+    <!--SECCION DE IMAGENES-->
+    <section class="sectionCollage">
+        <div class="sectionCollage__containter">
+            <img class="sectionCollage__containter--one  item" src="asset/webp/imgCollageDos.webp" alt="eEmpanada de tomate y albahaca cortada a la mitad" loading="lazy">
+            <img class="sectionCollage__containter--two item" src="asset/webp/boxDeOchoEmpanadas.webp" alt="Caja con ocho empanadas de distintos colores" loading="lazy">
+            <img class="sectionCollage__containter--three item" src="asset/webp/empanadasEstiradas.webp" alt="Masa de empanadas estiradas" loading="lazy">
+            <img class="sectionCollage__containter--four item" src="asset/webp/imgCollageTres.webp" alt="Chef amasando las tapas de empanadas" loading="lazy">
+            <div class="sectionCollage__containter--five item">
+                <h2>Ingredientes nutritivos y saludables</h2>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CARTA-->
+    <section class="sectionCarta" id="nuestraCarta">
+            <div class="sectionCarta__title">
+                <h2>Nuestra Carta</h2>
+                <p>¿Sabías que todas nuestras empanadas están cerradas a mano? <br> Invertimos mucho tiempo y amor en preparar cada una de ellas.</p>
+            </div>
+            <!--Empanada de ternera-->
+            <div class="sectionCarta__allArticle ">
+                <article class="sectionCarta__allArticle__article">
+                    <picture>
+                        <source srcset="asset/webp/empanadaDeTernera.webp" type="imgage/webp">
+                        <img src="asset/webp/empanadaDeTernera.webp" alt="empanada de ternera" loading="lazy">
+                    </picture> 
+                    <div class="sectionCarta__allArticle__article__content" >
+                      <h4>Ternera Suave</h4>
+                      <p>Un viaje al norte de Argentina! Cubos super tiernos de carne Angus, cebollas doradas, huevos cocidos y mezcla de especias argentinas</p> 
+                    </div>
+                </article>
+                <!--Empanada de cebolla-->
+                <article class="sectionCarta__allArticle__article">
+                    <picture>
+                        <source srcset="asset/webp/empanadaCebollaCaramelizada.webp" type="imgage/webp">
+                        <img src="asset/webp/empanadaCebollaCaramelizada.webp" alt="empanada de cebolla" loading="lazy">
+                    </picture> 
+                    <div class="sectionCarta__allArticle__article__content" >
+                      <h4>Queso de cabra, Nuez y Cebolla</h4>
+                      <p>¡La mezcla perfecta! Cebolla caramelizada, queso rulo 100% cabra y trozos de nueces que hacen crunch al morderla.</p> 
+                    </div>
+                </article>
+                <!--Empanada de jamon y queso-->
+                <article class="sectionCarta__allArticle__article">
+                    <picture>
+                        <source srcset="asset/webp/empanadaJamonYQueso.webp" type="imgage/webp">
+                        <img src="asset/webp/empanadaJamonYQueso.webp" alt="empanada de jamon y queso" loading="lazy">
+                    </picture>
+                    <div class="sectionCarta__allArticle__article__content" >
+                      <h4>Jamón y Queso</h4>
+                      <p>¿La que nos gusta a todos! Cubos de jamón cocido ahumado, mozzarella 100% y un sutil toque de aceite de oliva virgen extra.</p> 
+                    </div>
+                </article>
+            </div>
+            <a class="sectionCarta__link link" href="nuestraCarta.html" title="para ver la pagina Nuestra carta">Ver más</a> 
+    </section>
+    <!--SECCION PACKS EMPANADAS-->
+    <section class="sectionCarta fondoCompleto ">
+        <div class="sectionCarta sectionPacks">
+        <div class="sectionCarta__title">
+         <h2>Nuestros Packs</h2>
+         <p>¿Elige uno de nuestros packs y ahorra!</p>
+         <p>No tenemos dudas: si llegas con una caja de Muns, todos te amarán.</p>
+        </div>
+        <div class="sectionCarta__allArticle">
+            <!--Pack cuatro-->
+            <article class="sectionCarta__allArticle__article">
+                <picture>
+                    <source srcset="asset/webp/boxCuatroEmpanadas.webp" type="imgage/webp">
+                    <img src="asset/webp/boxCuatroEmpanadas.webp" alt="Caja de cuatro empanadas" loading="lazy">
+                </picture>
+                <div class="sectionCarta__allArticle__article__content packs" >
+                  <span>Pack de 4 empanadas</span>
+                  <h3>12€</h3>
+                </div>
+            </article>
+            <!--Pack ocho-->
+            <article class="sectionCarta__allArticle__article">
+                <picture>
+                    <source srcset="asset/webp/boxOchoEmpanadas.webp" type="imgage/webp">
+                    <img src="asset/webp/boxOchoEmpanadas.webp" alt="Caja de ocho empanadas" loading="lazy">
+                </picture>
+                <div class="sectionCarta__allArticle__article__content packs" >
+                  <span>Pack de 8 empanadas</span>
+                  <h3>24€</h3>
+                </div>
+            </article>
+            <!--Pack doce-->
+            <article class="sectionCarta__allArticle__article">
+                <picture>
+                    <source srcset="asset/webp/boxDoceEmpanadas.webp" type="imgage/webp">
+                    <img src="asset/webp/boxDoceEmpanadas.webp" alt="Caja de doce empanadas" loading="lazy">
+                </picture>
+                <div class="sectionCarta__allArticle__article__content packs" >
+                  <span>Pack de 12 empanadas</span>
+                  <h3>35€</h3>
+                </div>
+            </article>
+        </div>
+        <div class="sectionCarta__allArticle">
+            <!--Pack veinticuatro-->
+            <article class="sectionCarta__allArticle__article noMovil">
+                <picture>
+                    <source srcset="asset/webp/boxVeintiCuatro.webp" type="imgage/webp">
+                    <img src="asset/webp/boxVeintiCuatro.webp" alt="Caja de Veinticuatro empanadas" loading="lazy">
+                </picture>
+                <div class="sectionCarta__allArticle__article__content packs" >
+                  <span>Pack de 24 empanadas</span>
+                  <h3>68€</h3>
+                </div>
+            </article>
+            <!--Pack treinta y seis-->
+            <article class="sectionCarta__allArticle__article noMovil">
+                <picture>
+                    <source srcset="asset/webp/boxTreintaySeis.webp" type="imgage/webp">
+                    <img src="asset/webp/boxTreintaySeis.webp" alt="Caja de treinta y seis empanadas" loading="lazy">
+                </picture>
+                <div class="sectionCarta__allArticle__article__content packs" >
+                  <span>Pack de 36 empanadas</span>
+                  <h3>99€</h3>
+                </div>
+            </article>
+            <!--Texto con boton-->
+            <div class="sectionCarta__allArticle__article end">
+                  <span>¡No te lo puedes perder! Los mejores precios para ti</span>
+                  <button class="btn" title="btn para la pagina donde se realizan los pedidos">Comprar Packs</button>  
+            </div>
+        </div>
+       </div> 
+    </section>
+    <!--SECCION PREGUNTAS FRECUENTES-->
+    <section class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <!--PREGUNTA UNO-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Tenéis muns vegetarianas? ¿Y veganas?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>¡Claro que sí! 🙌🏼 10 de los 16 sabores de nuestra carta son vegetarianos/veganos (veganas 🌱: Cheeseburger, Humita y Chocobanana).</p>
+            </div>
+        </div>
+        <!--PREGUNTA DOS-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Puedo congelar mis Muns? ¿Y puedo calentar mis Muns en la freidora de aire?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>¡Sí se puede! 🤩 Debes pedirlas “para hornear en casa”, es decir que no estén cocinadas al 100%. Cuando las quieras consumir, debes descongelarlas en nevera (demora unas 5 horas aproximadamente) para posteriormente hornearlas (programa tu freidora a 200ºC).</p>
+            </div>
+        </div>
+        <!--PREGUNTA TRES-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Puedo pedir Muns para un evento o reunión?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>Ingresa a nuestra web, en la sección Muns en tu Empresa tendrás toda la información necesaria. También puedes escribirnos a pedidos@lasmuns.com</p>
+            </div>
+        </div>
+        <!--PREGUNTA CUATRO-->
+        <div class="faq__container">
+            <!--Pregunta-->
+            <div class="faq__container__question">
+                <h3>¿Cómo hago para tener una franquicia de Las Muns?</h3>
+                <img src="asset/keyboardArrowDown.svg" alt="Icono de flecha">
+            </div>
+            <!--Respuesta-->
+            <div class="faq__container__answer">
+                <p>Ingresa a nuestra web, en la sección Abre tu Franquicia tendrás toda la información necesaria. También puedes escribirnos a franquicias@lasmuns.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION DONDE ESTAMOS -->
+    <section id="ubicacion" class="sectionMaps">
+        <h3 class="sectionMaps__title">Buscanos en tu ciudad favorita</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.6786457781313!2d-4.425284663173249!3d36.717388865446644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a4871bd615%3A0x1b8737cf1951478a!2sLas%20Muns!5e0!3m2!1ses!2ses!4v1720824881706!5m2!1ses!2ses" width="auto" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section> 
+    <!--SECCION NEWSLETTERS-->
+    <div class="sectionNewsletters">
+        <div class="sectionNewsletters__container">
+         <span class="sectionNewsletters__container--span">Inscríbete para recibir novedades e información de nuevas aperturas!</span>
+         <form class="sectionNewsletters__container__form" method="POST" action="subscribe"> 
+             <input class="sectionNewsletters__container__form--input" type="email" placeholder="Email" required>
+             <input class="sectionNewsletters__container__form--inputSubmit btn" type="submit" value="Enviar">
+         </form>
+        </div>
+    </div>
+    <!--BOTON PARA SUBIR AL INICIO-->
+     <div class="subir">
+        <a class="subirDiv" href=" #inicio" title="enlace para subir arriba de todo"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
+    </div>
+    <!--FOOTER-->
+    <footer class="footer">
+        <nav class="footer__divRow">
+          <div class="footer__divRow__img">
+            <img src="Asset/Logo.jpg" alt="logo Las Muns">
+          </div>
+          <div class="footer__divRow__item">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="#" title="enlace a la carta de alergenos">Carta de Alérgenos</a></li>
+                <li><a href="index.html" title="enlace a la pagina donde se encuentran preguntas frecuentes">Preguntas frecuentes</a></li>
+                <li><a href="#" title="enlace a la seccion trabaja con nosotros">Trabaja con nosotros</a></li>
+            </ul>
+          </div>
+          <div class="footer__divRow__item">
+            <h3>Nuestra carta</h3>
+            <ul>
+              <li><a href="#" title="enlace al pdf de la carta">Packs</a></li>
+              <li><a href="#" title="enlace al pdf de la carta">Empanadas</a></li>
+              <li><a href="#" title="enlace al pdf de la carta">Bebidas y postres</a></li>
+            </ul>
+          </div>
+          <div class="footer__divRow__item">
+            <h3>Secciones</h3>
+            <ul>
+                <li><a href="#ubicacion" title="enlace a la seccion donde estamos">Dónde estamos</a></li>
+                <li><a href="franquicia.html" title="enlace a la pagina Abre tu franquicia">Abre tu franquicia</a></li>
+                <li><a href="enTuEmpresa.html" title="enlace a la pagina Muns en Tu Empresa">Muns en tu empresa</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__divColumn">
+            <ul>
+                <li><a href="https://www.behance.net/agustinasacchi" title="enlace a porfolio de Agustina" target="_blank">©2024 Las Muns - Desarrollado por: Agustina Sacchi</a></li>
+                <li><a href="#" title="enlace a la politica de la web">Polìtica de privacidad</a></li>
+                <li><a href="#" title="enlace a la politica de la web">Polìtica de Cookies</a></li>
+            </ul>
+        </div>
+        <img class="footer__img" src="Asset/unionEuropea.png" alt="union europea financiado">
+    </footer>
+</body>
+</html>
