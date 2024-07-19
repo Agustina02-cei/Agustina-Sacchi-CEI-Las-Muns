@@ -1,0 +1,1186 @@
+/*RESEAT*/                                 /**<!-- <> --> /* {} 1em 16px*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {  
+      
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+/* h1 { 
+    /* font-size: 2.5em; poneserselo al banner */
+
+span {
+    font-weight: 600;
+    /* font-size: 1.5em; PONERSELO AL BANNER*/ 
+    display: block;
+}
+
+
+/*ROOT*/
+:root {
+    --main-color: #628D06; 
+    --secondary-color: #948362;
+    --main-background-color:#948362;
+    --secondary-background-color:#EAE7E1;
+    --main-max-width: 1200px;
+    --main-margin: auto;
+    --main-padding: 2em 0em;
+    --padding-small: 1em 0em;
+    --main-gap: 2em;
+
+    /*Para el responsive*/    
+    --max-width-large: 900px;
+    --max-width-medium: 600px;
+    --max-width-small: 350px;
+    --max-width-extra-small: 250px;
+    
+
+} 
+
+/*BOTONES/LINKS ESTADO NORMAL Y HOVER*/
+
+.btn { 
+    background-color: var(--main-background-color);
+    color: rgb(255, 255, 255);
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+    padding: 1em 2em;
+}
+
+.btn:hover { 
+    background-color: #695e49;
+    color: rgb(255, 255, 255);
+}
+
+.subir:hover {
+    background-color: #537805;
+}
+
+.subir {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    margin: 2em;
+    background-color: #628D06;
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.link {
+    text-decoration: underline;
+} 
+
+/*ELEMENTOS QUE SE VAN A VER UNICAMENTE EN MOVILEES*/
+
+.siMovil {
+    display: none;
+}
+
+/*HEADER*/
+
+.header {
+    background-color: #ffffff;
+    border-radius: 0px 0px 30px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: var(--padding-small);
+
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-content: start;
+    align-items: center;
+
+    gap: 3em;
+ 
+    margin: var(--main-margin);
+}  
+
+.header__nav__img { 
+    max-width: 10em;
+}
+
+.header__nav__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3em;
+}
+
+.abrirMenu, .cerrarMenu {
+    display: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/*SECCION BANNER PRINCIPAL*/
+
+.sectionBanner {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), rgba(255, 255, 255, 0.524)),
+    url('/asset/webp/imgbanner.webp'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 70vh;
+    opacity: 30;
+
+    display: flex;
+}
+
+.sectionBanner__div { 
+    max-width: var(--main-max-width);
+    margin:var(--main-margin);
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: var(--main-gap);
+    padding: var(--main-padding);
+
+    color: #32231D;
+}
+
+.sectionBanner__div__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 0.5em;
+    color: rgb(255, 255, 255);
+}
+
+/*SECCION SOBRE NOSOTROS  {} */
+
+.sectionSobreNosotros {
+    max-width:var(--main-max-width);
+    margin: var(--main-margin);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+
+    padding: var(--main-padding);
+    gap: var(--main-gap);   
+}
+
+.sectionSobreNosotros__img {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.sectionSobreNosotros__content {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.sectionSobreNosotros__content__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: var(--main-gap);
+
+    align-items: start;
+
+    padding: var(--main-padding);
+}
+
+/*SECCION DE IMGAGENES/COLLAGE  {} */
+
+.sectionCollage  {
+    background-color: #F4F1EC;
+    padding: var(--main-padding);
+
+    display: flex;
+}
+
+.sectionCollage__containter {    
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-template-rows:  auto;
+    gap: 0.5em;
+
+    max-width: var(--main-max-width); 
+    margin: var(--main-margin); 
+}
+
+.item  {
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 5px;
+    height: 100%;
+}
+
+.sectionCollage__containter--one {
+    grid-column: 2 / 3 ; 
+}
+
+.sectionCollage__containter--two {
+   
+    grid-column: 1 / 2 ; 
+    grid-row: 1 / 3; 
+}
+
+.sectionCollage__containter--three {
+    grid-column: 2 / 3; 
+    
+}
+
+.sectionCollage__containter--four {
+    grid-column: 3 / 3 ; 
+    grid-row: 1 / 2; 
+}
+
+.sectionCollage__containter--five {
+    grid-column: 3 / 4 ; 
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align:end;
+
+    font-size: 2rem;
+    padding: var(--padding-small);
+
+    color: #628D06;
+} 
+/*NUESTRA CARTA  {} */
+
+.sectionCarta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--main-gap);
+    padding: 5em 0em;
+
+    padding: var(--main-padding);
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+}
+
+.sectionCarta__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--main-padding);
+}
+
+.sectionCarta__allArticle {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 1.5em;
+} 
+
+.sectionCarta__allArticle__article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25em;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.045);
+
+    flex-basis: 0;
+    flex-grow: 1;
+
+    position: relative;
+    background-color: #ffffff;
+}
+
+.sectionCarta__allArticle__article__content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5em;
+
+    padding: 1.5em 1em;
+}
+.sectionCarta__allArticle__article picture img{
+    border-radius: 1.25em 1.25em 0em 0em;
+    object-fit: cover;
+    height: 100%;
+    max-height: 300px;
+}  
+
+/*SECCION DE PACKS  {} */
+.sectionCarta.fondoCompleto {
+    background-color: var(--secondary-background-color);
+    max-width: 100%;
+    padding: 2em 0em;
+}
+
+.sectionCarta.sectionPacks {
+    max-width: var(--main-max-width);
+    margin: auto;
+}
+
+.sectionCarta__allArticle__article__content.packs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:  1em;
+}
+
+.sectionCarta__allArticle__article__content.packs  span{
+   font-size: .9375rem;
+}
+
+.sectionCarta__allArticle__article__content.packs  h3{
+    background-color: #ffffff;
+    color: #628D06;
+    padding: 1em;
+    border-radius: 100%;
+
+    position: absolute;
+    z-index: auto;
+    top: 0;
+    right: 0;
+
+    margin: 1em;
+}
+
+/*SECCION DE PACKS, TEXTO CON EL BOTON */
+
+
+.sectionCarta__allArticle__article.end:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+    align-items: start;
+
+    gap: 1em;
+
+}
+
+.sectionCarta__allArticle__article.end:last-child span {
+    font-size: 1.6rem;
+}
+
+/*PREGUNTAS FRECUENTES  {} */
+
+.faq {
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+    padding: 5em 0em;
+
+    display: flex;
+    flex-direction: column;
+    
+    gap: var(--main-gap);
+}  
+
+.faq__container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid  #94836223;
+    cursor: pointer; 
+
+    gap: 0.5em;
+    padding: 1em;
+}
+
+.faq__container__question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0em 0em 0.5em 0em;
+}
+
+.faq__container__question h3 { 
+    font-weight: 600;
+}
+
+.faq__container__question img {
+    width: 1.875em;  /*COMO LE AJUSTO EL TAMAÑO BIEN?*/
+    transition: transform .1s ease-in;
+}
+
+.faq__container__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.faq__container__answer p {
+    padding: var(--padding-small);
+}
+
+/*Clase activa {} */
+
+.faq__container.active .faq__container__answer {
+    max-height: 10vh;
+}
+
+.faq__container.active .faq__container__question img {
+    transform: rotate(180deg);
+}
+
+/*SECCION DONDE ESTAMOS   {} */
+
+.sectionMaps {
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+    
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: var(--main-gap);
+}
+
+
+/*SECCION NEWSLETTERS   {} */
+
+.sectionNewsletters {
+    background-color: #F4F1EC;
+    padding: var(--main-padding);
+    margin: 1em 0em;
+}
+
+.sectionNewsletters__container {
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sectionNewsletters__container--span {
+    font-size: 1rem;
+}
+
+.sectionNewsletters__container__form { 
+    display: flex;
+    flex-direction: row;
+
+    gap: var(--main-gap);
+}
+
+.sectionNewsletters__container__form--input {
+    border: none;
+    border-radius: 0.5em;
+
+    padding: 1em 2.5em;
+}
+
+
+/*FOOTER  {} */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5em;
+
+    padding: var(--main-padding);
+
+
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+}  
+
+/*FOOTER  EN ROW   {} */
+
+.footer__divRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    gap: 1em;
+    margin: 1em; 
+}
+
+.footer__divRow__img {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.footer__divRow__item {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+
+    gap: 1em;
+}
+
+
+.footer__divRow__item ul {
+    gap: 0.5em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*FOOTER EN COLUMN   {} */
+
+
+.footer__divColumn {
+    width: 100%;
+    border-top: solid 3px #94836223;
+    margin: 0.5em;
+}
+
+.footer__divColumn ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    margin: 1em 0em;
+}
+
+.footer__img  {
+    max-width: 500px;
+    margin: auto;
+}
+ 
+/*PAGINA DOS -  ABRE TU FRANQUICIA*/                                                      /*PAGINA DOS*/
+
+/*SECCION BANNER SECUNDARY*/
+
+.sectionBanner.sectionBanner__secondary {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)),
+    url('/asset/imgBannerFranquicia.jpg');
+}
+
+/*SECCION FRANQUICIA*/
+.sectionSobreNosotros__img.secondary img {
+    object-fit: cover;
+    border-radius: 1em;
+    max-height: 650px;                                                                   /*CHEQUEAR*/
+}
+
+/*SECCION VENTAJAS*/
+.sectionVentajas {
+    display: flex;
+    flex-direction: column;
+
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+    padding: var(--main-padding);
+    gap: 0.5em;
+} 
+
+.sectionVentajas h2{
+   padding: var(--main-padding);
+} 
+
+.sectionVentajas__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+  
+
+    align-items: center;
+    padding: var(--main-padding);
+    border-bottom: var(--secondary-background-color) solid 2px;
+}
+
+.sectionVentajas__content picture img {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    border-radius: 1em;
+    object-fit: cover;
+    max-width: 150px;
+}
+
+.sectionVentajas__content__text {
+    flex-basis: 0;
+    flex-grow: 1;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+/*SECCION INVERSION  {} */
+.sectionInversion {
+    background-color: var(--secondary-background-color);
+}
+.sectionInversion__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0em;
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+}
+
+/*FORMULARIO {}  */
+
+.sectionFormulario {
+    max-width: var(--main-max-width);
+    margin: var(--main-margin);
+    padding: 3em 0em;
+}
+
+.sectionFormulario__container {
+    padding: var(--main-padding);
+    gap: 3em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+.sectionFormulario__container  picture img{
+    border-radius: 1em;
+    object-fit: cover;
+    max-width: 500px;
+} 
+
+.sectionFormulario___form{ 
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 0;
+    flex-grow: 1;
+
+    gap: 1em;
+    padding: var(--padding-small);
+}
+
+.sectionFormulario___form__divDos {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 1em;
+    padding: 0.5em;
+}
+
+.sectionFormulario___form__div {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 1em;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.726);    
+}
+
+.sectionFormulario___form--input {
+    display: flex;
+    padding: 1em;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* PAGINA TRES - MUNS EN TU EMPRESA  */                                            /*PAGINA TRES*/
+
+/*SECCION BANNER THIRD*/
+
+.sectionBanner.sectionBanner__third {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.253)),
+    url('/asset/imgBannerEnTuEmpresa.jpg');
+}
+
+
+/* RESPONSIVE  */                                                                 /*RESPONSIVE*/
+
+@media screen and (max-width: 1150px) {
+
+    /*HEADER*/
+    .header {
+        padding: 2em;
+        max-width: var(--max-width-large);
+        gap: 3em;
+    }
+    .header__nav__img {
+        max-width: 7em;
+    }
+
+    /*SECCION BANNER PRINCIPAL*/
+    .sectionBanner__div {
+        max-width: var(--max-width-large);
+    }
+    
+    /*SECCION SOBRE NOSOTROS*/
+    .sectionSobreNosotros {
+        max-width: var(--max-width-large);
+    }
+
+    /*SECCION COLLAGE*/
+    .sectionCollage__containter {
+        max-width: var(--max-width-large);
+    }
+    .sectionCollage__containter--five {
+        font-size: 1.4rem;
+    }
+
+    /*SECCION NUESTRA CARTA*/
+    .sectionCarta  {
+        max-width: var(--max-width-large);  
+    }
+    .sectionCarta.sectionPacks {
+        max-width: var(--max-width-large);       
+    }
+
+    /*PREGUNTAS FRECUENTES*/
+    .faq {
+        max-width: var(--max-width-large);
+    }
+
+    /*NEWSLETTERS*/
+     .sectionNewsletters__container {
+        max-width: var(--max-width-large);
+    }
+
+    /*SECCION DONDE ESTAMOS*/
+
+    .sectionMaps {
+    max-width: var(--max-width-large);
+    }
+
+    /*FOOTER*/
+    .footer {
+        max-width: var(--max-width-large);
+    }
+
+    /*SECCION VENTAJAS                                            Pagina Abre tu franquicia*/
+    .sectionVentajas {
+      max-width: var(--max-width-large);
+    } 
+
+    /*SECCION INVERSION */
+    .sectionInversion__content {
+        max-width: var(--max-width-large);
+    }
+
+    /*FORMULARIO */
+    .sectionFormulario {
+        max-width: var(--max-width-large);
+    }   
+    .sectionFormulario__container  picture img{
+        max-width: 650px;
+    } 
+     
+}
+/* RESPONSIVE PARA ORDENADORES Y TABLETS */
+
+@media screen and (max-width: 900px) {
+    .noMovil {
+        display: none;
+    }
+    .siMovil {
+        display: flex;
+    }
+    
+    /*HEADER*/
+    .abrirMenu, .cerrarMenu {
+        display: block;
+    }
+    .header {
+        padding: 2em;
+    }
+    .header__nav {
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        padding: 2em;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.318);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .header__nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .header__nav__ul {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    /*SECCION BANNER PRINCIPAL*/
+    .sectionBanner__div {
+        max-width: var(--max-width-medium);
+        height: 40vw;
+    }
+
+    /*SECCION SOBRE NOSOTROS*/
+    .sectionSobreNosotros {
+        max-width: var(--max-width-medium);
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: var(--main-padding);
+    }
+    .sectionSobreNosotros__img {
+        max-width: 450px;
+    }
+
+    /*SECCION COLLAGE*/
+    .sectionCollage__containter {
+        max-width: var(--max-width-medium);
+        padding: 0em 0.5em;  
+    }
+    .sectionCollage__containter--five {
+        font-size: 1rem;
+    }
+
+    /*SECCION NUESTRA CARTA*/
+    .sectionCarta  {
+        max-width: var(--max-width-medium); 
+    }
+    .sectionCarta.sectionPacks {
+        max-width: var(--max-width-medium); 
+    }
+    .sectionCarta__title {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .sectionCarta__allArticle {
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionCarta__allArticle__article.end:last-child span {
+        font-size: 1rem;
+    }
+
+    /*PREGUNTAS FRECUENTES*/
+    .faq {
+        max-width: var(--max-width-medium);
+    }
+    .sectionNewsletters__container {
+        max-width: var(--max-width-medium);
+
+        flex-direction: column;
+        gap: var(--main-gap);
+    }
+
+    /*SECCION DONDE ESTAMOS*/
+    .sectionMaps {
+    max-width: var(--max-width-medium);
+    }
+
+    /*FOOTER*/
+    .footer__divRow {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__divRow__item {
+        padding: var(--padding-small);
+        align-items: start;
+    }
+    .footer__divRow__item ul {
+        align-items: start;
+    }
+    .footer__divColumn ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .footer__img {
+        max-width: 400px;
+        margin: auto;
+    }
+    .footer__divRow__img {
+        max-width: 300px;
+    }
+
+     /*SECCION VENTAJAS                                            Pagina Abre tu franquicia*/
+     .sectionVentajas {
+        max-width: var(--max-width-medium);
+    } 
+
+    /*SECCION INVERSION */
+    .sectionInversion {
+       padding: var(--main-padding);
+    }
+    .sectionInversion__content {
+        max-width: var(--max-width-medium);
+    }
+    /*FORMULARIO */
+    .sectionFormulario {
+        max-width: var(--max-width-medium);
+    }
+}
+
+/*MEDIA QUERY PARA MOVILES Y TABLETS*/
+@media screen and (max-width: 610px) {
+
+    /*HEADER RESPONSIVE*/
+    .header {
+        max-width: 400px;
+    }
+
+    /*SECCION BANNER PRINCIPAL*/
+    .sectionBanner__div {
+        max-width: var(--max-width-small);
+        gap: 2em;                                      /*NO FUNCIONA POR QUE*/
+    } 
+
+    /*SECCION SOBRE NOSOTROS  {} */
+    .sectionSobreNosotros {
+        max-width: var(--max-width-small);
+    }
+    .sectionSobreNosotros__img {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*SECCION COLLAGE*/
+    .sectionCollage__containter {
+        grid-template-columns: 1fr 1fr;
+        max-width: var(--max-width-small);
+        padding: 0em;
+    }
+    .sectionCollage__containter--one {
+        grid-column: 2 / 3 ; 
+        grid-row: 2 / 3; 
+    }
+    .sectionCollage__containter--two {
+       
+        grid-column: 1 / 2 ; 
+        grid-row: 1 / 2; 
+    }
+    .sectionCollage__containter--three {
+        grid-column: 1 / 2; 
+        grid-row: 2/ 3; 
+        
+    }
+    .sectionCollage__containter--four {
+        grid-column: 2 / 3; 
+        grid-row: 1 / 2; 
+    }
+    .sectionCollage__containter--five {
+        display: none;
+    } 
+
+    /*SECCION NUESTRA CARTA*/
+    .sectionCarta  {
+        max-width: var(--max-width-small); 
+    }
+    .sectionCarta.sectionPacks {
+        max-width: var(--max-width-small);
+        padding: var(--padding-small);
+    }
+
+    /*PREGUNTAS FRECUENTES*/
+    .faq {
+        max-width: var(--max-width-small);
+    }
+    .faq__container.active .faq__container__answer {
+        max-height: 20vh;
+    }
+    .faq__container {
+        padding: 0em;
+    }
+
+     /*NEWSLETTERS*/
+    .sectionNewsletters__container {
+        max-width: var(--max-width-small);
+    }
+    .sectionNewsletters__container__form {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /*SECCION DONDE ESTAMOS*/
+    .sectionMaps {
+        max-width: var(--max-width-small);
+    }
+
+    /*FOOTER*/
+    .footer__divRow {
+        max-width: var(--max-width-small);
+    }
+    .footer__img {
+        max-width: var(--max-width-small);
+        margin: auto;
+    } 
+
+    /*SECCION VENTAJAS                                            Pagina Abre tu franquicia*/
+     .sectionVentajas {
+        max-width: var(--max-width-small);
+    } 
+    .sectionVentajas__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start; 
+    }
+    .sectionVentajas__content__text {
+        padding: var(--padding-small);
+    }
+
+    /*SECCION INVERSION */
+     .sectionInversion {
+        padding: var(--padding-small);
+    }
+    .sectionInversion__content {
+        max-width: var(--max-width-small);
+    }
+    /*FORMULARIO */
+    .sectionFormulario {
+        max-width: var(--max-width-small);
+    }
+}
+
+/*MEDIA QUERY PARA MOVILES PEQUEÑOS*/
+
+@media screen and (max-width: 410px) {
+    /*HEADER RESPONSIVE*/
+    .header {
+        max-width: 300px;
+    }
+
+    /*SECCION BANNER PRINCIPAL*/
+    .sectionBanner__div {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*SECCION SOBRE NOSOTROS*/
+    .sectionSobreNosotros {
+        max-width: var(--max-width-extra-small);
+    }
+    /*SECCION COLLAGE*/
+    .sectionCollage__containter {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*SECCION NUESTRA CARTA*/
+    .sectionCarta  {
+        max-width: var(--max-width-extra-small); 
+    }
+    .sectionCarta.sectionPacks {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*PREGUNTAS FRECUENTES*/
+    .faq {
+        max-width: var(--max-width-extra-small);
+    }
+
+     /*NEWSLETTERS*/
+    .sectionNewsletters__container {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*SECCION DONDE ESTAMOS*/
+    .sectionMaps {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*FOOTER*/
+    .footer__divRow { 
+        max-width: var(--max-width-extra-small); 
+        align-items: start;                                 
+    }
+    .footer__divColumn ul{
+        padding: 2em;
+        align-items: start;
+    }
+    .footer__img {
+        max-width: var(--max-width-extra-small);
+    }
+    /*BOTON PARA SUBIR*/
+    .subir {
+        margin: 1em;
+        padding: 0.3em;
+    }
+
+    /*SECCION VENTAJAS                                            Pagina Abre tu franquicia*/
+     .sectionVentajas {
+        max-width: var(--max-width-extra-small);
+    } 
+
+    /*SECCION INVERSION */
+    .sectionInversion__content {
+        max-width: var(--max-width-extra-small);
+    }
+
+    /*FORMULARIO */
+    .sectionFormulario {
+        max-width: var(--max-width-extra-small);
+        margin: var(--main-margin);
+       padding: var(--main-padding);
+    }
+}
