@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Muns - Agustina Sacchi CEI</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header" id="inicio">
+      <img class="header__nav__img" src="asset/Logo.jpg" alt="Logotipo de Las Muns">
+      <button id="abrirMenu" class="abrirMenu" title="btn para abrir menu responsive"><img src="asset/menu.svg" alt="Icono de menú"></button>
+      <nav id="nav" class="header__nav" >
+       <button class="cerrarMenu" id="cerrarMenu" title="btn para cerrar el menu responsive"><img src="asset/close.svg" alt="Icono de cerrar menú"></button>
+       <ul class="header__nav__ul">
+          <li class="header__nav__ul__li"><a href="index.html" title="enlace a la pagina de incio">Inicio</a></li>
+          <li class="header__nav__ul__li"><a href="#ubicacion" title="enlace a la seccion donde se encuentra la ubicacion">Dónde Estamos</a></li>
+          <li class="header__nav__ul__li"><a href="franquicia.html" title="enlace a la pagina Franquicia">Abre tu Franquicia</a></li>
+          <li class="header__nav__ul__li"><a href="enTuEmpresa.html" title="enlace a la pagina Muns en tu Empresa">Muns en tu Empresa</a></li>
+          <li><button class="header__nav__btn btn" title="boton a la pagina de hacer pedido">Haz tu Pedido</button></li>
+        </ul>
+      </nav>   
+    </header>
+    <!--SECCION BANNER PRINCIPAL-->
+    <section class="sectionBanner sectionBanner__third">
+      <div class="sectionBanner__div">
+          <div class="sectionBanner__div__text">
+              <h1>Catering para Eventos</h1>
+              <span>¡Convierte tus reuniones en un éxito!</span>
+          </div>
+      </div>
+     </section>
+     <!--SECCION SOBRE NOSOTROS-->
+    <section class="sectionSobreNosotros">
+      <div class="sectionSobreNosotros__content">
+          <div class="sectionSobreNosotros__content__text"> 
+             <h2 class="noMovil">¿Por qué Las Muns?</h2>
+             <p>Tenemos empanadas para todos los gustos: con carne, vegetarianas, veganas o dulces...</p>
+             <p>Te las llevamos listas para servir, no necesitarás ni platos ni cubiertos.</p>
+             <p>Aguantan como recién salidas del horno hasta una hora después.</p>
+             <p>Encajamos muy bien en reuniones, eventos, inauguraciones, charlas, exposiciones, cumpleaños, bodas, ¡lo que quieras!</p>
+             <button class="header__nav__btn btn" title="btn a la pagina donde se realizan los pedidos">Haz tu Pedido</button>
+          </div>
+      </div>
+      <div class="sectionSobreNosotros__img secondary">
+        <picture>
+          <source srcset="asset/webp/empanadas.webp" type="imgage/webp">
+          <img src="asset/webp/empanadas.webp" alt="empanadas de distintos colores sobre una caja" loading="lazy">
+        </picture>
+      </div>
+      <h2 class="siMovil">¿Por qué Las Muns?</h2>
+    </section>
+    <!--SECCION FORMULARIO-->
+    <section class="sectionFormulario">
+      <div class="sectionFormulario__container">
+        <picture class="noMovil">
+          <source srcset="asset/webp/caja.webp" type="imgage/webp">
+          <img src="asset/webp/caja.webp" alt="caja de empanadas frente a la tienda">
+        </picture>
+        <div>
+          <div class="sectionFormulario__container__content">
+           <h2>¿Aún no lo tienes claro?</h2>
+           <p>Escríbenos con lo que tienes en mente y te mandaremos una solución a medida.</p>
+          </div>
+         <form class="sectionFormulario___form" method="POST" action="#">
+            <div class="sectionFormulario___form__div">
+              <input class="sectionFormulario___form--input" type="text" placeholder="Nombre" required>
+              <input class="sectionFormulario___form--input" type="text" placeholder="Apellido">
+            </div>   
+            <input class="sectionFormulario___form--input" type="email" placeholder="Email" required>
+            <input class="sectionFormulario___form--input" type="number" placeholder="Numero de Telefono">
+            <textarea class="sectionFormulario___form--input" placeholder="Comentarios" rows="4" cols="50"></textarea>
+            
+            <div class="sectionFormulario___form__divDos"> 
+              <input type="checkbox" required>
+              <a href="#" title="enlace a la pagina de condiciones">He leido y acepto la politica de privacidad</a>
+            </div>
+            <input class="btn" type="submit" name="Enviar" value="Enviar">
+          </form>
+         </div>
+      </div>        
+  </section> 
+  <!-- SECCION DONDE ESTAMOS -->
+    <section id="ubicacion" class="sectionMaps">
+        <h3 class="sectionMaps__title">Buscanos en tu ciudad favorita</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3487.6786457781313!2d-4.425284663173249!3d36.717388865446644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a4871bd615%3A0x1b8737cf1951478a!2sLas%20Muns!5e0!3m2!1ses!2ses!4v1720824881706!5m2!1ses!2ses" width="auto" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section> 
+    <!--SECCION NEWSLETTERS-->
+    <div class="sectionNewsletters">
+        <div class="sectionNewsletters__container">
+         <span class="sectionNewsletters__container--span">Inscríbete para recibir novedades e información de nuevas aperturas!</span>
+         <form class="sectionNewsletters__container__form" method="POST" action="subscribe"> <!--REVISAR-->
+             <input class="sectionNewsletters__container__form--input" type="email" placeholder="Email" required>
+             <input class="sectionNewsletters__container__form--inputSubmit btn" type="submit" value="Enviar">
+         </form>
+        </div>
+    </div>
+    <!--BOTON PARA SUBIR AL INICIO-->
+    <div class="subir">
+      <a class="subirDiv" href=" #inicio" title="enlace a la primera seccion de la web"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
+    </div>
+    <!--FOOTER-->
+    <footer class="footer">
+      <nav class="footer__divRow">
+        <div class="footer__divRow__img">
+          <img src="Asset/Logo.jpg" alt="logo Las Muns">
+        </div>
+        <div class="footer__divRow__item">
+          <h3>Información</h3>
+          <ul>
+            <li><a href="#" title="enlace a la carta de alergenos">Carta de Alérgenos</a></li>
+              <li><a href="index.html" title="enlace a la pagina donde se encuentran preguntas frecuentes">Preguntas frecuentes</a></li>
+              <li><a href="#" title="enlace a la seccion trabaja con nosotros">Trabaja con nosotros</a></li>
+            </ul>
+        </div>
+        <div class="footer__divRow__item">
+          <h3>Nuestra carta</h3>
+          <ul>
+            <li><a href="#" title="enlace al pdf de la carta">Packs</a></li>
+            <li><a href="#" title="enlace al pdf de la carta">Empanadas</a></li>
+            <li><a href="#" title="enlace al pdf de la carta">Bebidas y postres</a></li>
+          </ul>
+        </div>
+        <div class="footer__divRow__item">
+          <h3>Secciones</h3>
+            <ul>
+              <li><a href="#ubicacion" title="enlace a la seccion donde estamos">Dónde estamos</a></li>
+              <li><a href="franquicia.html" title="enlace a la pagina Abre tu franquicia">Abre tu franquicia</a></li>
+              <li><a href="enTuEmpresa.html" title="enlace a la pagina Muns en Tu Empresa">Muns en tu empresa</a></li>
+            </ul>
+        </div>
+      </nav>
+        <div class="footer__divColumn">
+          <ul>
+            <li><a href="https://www.behance.net/agustinasacchi" title="enlace a porfolio de Agustina" target="_blank">©2024 Las Muns - Desarrollado por: Agustina Sacchi</a></li>
+            <li><a href="#" title="enlace a la politica de la web">Polìtica de privacidad</a></li>
+            <li><a href="#" title="enlace a la politica de la web">Polìtica de Cookies</a></li>
+          </ul>
+        </div>
+        <img class="footer__img" src="Asset/unionEuropea.png" alt="">
+    </footer>
+</body>
+</html>
